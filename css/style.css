@@ -27,9 +27,11 @@
   display: block;
   width: 160px;
   height: 40px;
-  background-color: #ef5350;
+  background-color: #64b5f6;
   border: none;
   border-radius: 40px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   color: white;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
@@ -37,15 +39,17 @@
 }
 .open-content {
   display: block;
-  width: 80px;
+  width: auto;
   height: 30px;
   background-color: transparent;
-  border: solid #ef5350 1px;
-  border-radius: 30px;
-  color: #ef5350;
+  border: solid #64b5f6 1px;
+  border-radius: 32px;
+  color: #64b5f6;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   font-weight: 200;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .cover-container {
   display: block;
@@ -97,6 +101,10 @@
   font-size: 16px;
   font-weight: 200;
 }
+.cover-container nav li a:hover {
+  color: #64b5f6;
+  transition: 0.3s;
+}
 .cover-container .cover-title {
   display: block;
   color: white;
@@ -119,20 +127,21 @@
 .cover-container .subscribe {
   margin: auto;
   margin-top: 60px;
-  text-transform: uppercase;
   display: block;
   width: 160px;
   height: 40px;
-  background-color: #ef5350;
+  background-color: #64b5f6;
   border: none;
   border-radius: 40px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   color: white;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   font-weight: 200;
 }
 .cover-container .subscribe:hover {
-  background-color: #bf4240;
+  background-color: #5091c5;
 }
 .topic-title {
   display: block;
@@ -226,7 +235,7 @@
   margin-top: 26px;
 }
 .design-content-container .open-content:hover {
-  background-color: #ef5350;
+  background-color: #64b5f6;
   color: white;
 }
 .design-content-container .content-desc {
@@ -242,4 +251,22 @@
   height: 180px;
   margin-top: 120px;
   background-color: #E0E0E0;
+  padding-top: 70px;
+  text-align: center;
+}
+.subscribe-container input {
+  display: inline-block;
+  width: 380px;
+  height: 40px;
+  background: white;
+  border: solid #ebebeb 1px;
+  border-radius: 41px;
+  padding-left: 20px;
+}
+.subscribe-container .subscribe {
+  display: inline-block;
+  margin-left: 40px;
+}
+.subscribe-container .subscribe:hover {
+  background-color: #5091c5;
 }

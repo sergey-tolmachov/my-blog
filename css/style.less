@@ -4,7 +4,7 @@
 @textColor: #424242;
 @unactiveTextColor: #9E9E9E;
 @btnTextColor: white;
-@btnColor: #EF5350;
+@btnColor: #64B5F6;
 @lightTextColor: white;
 
 //Font
@@ -67,20 +67,24 @@
     background-color: @btnColor;
     border: none;
     border-radius: 40px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     .desc-text
 }
 
 .open-content {
     display: block;
-    width: 80px;
+    width: auto;
     height: 30px;
     background-color: transparent;
     border: solid @btnColor 1px;
-    border-radius: 30px;
+    border-radius: 32px;
     color: @btnColor;
     font-family: @mainFont;
     font-size: @descTextsize;
     font-weight: @descTextWeight;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 
@@ -134,6 +138,11 @@
                 text-decoration: none;
                 .desc-text
             }
+            
+            a:hover {
+                color: @btnColor;
+                transition: 0.3s;
+            }
         }
     }
     
@@ -159,7 +168,6 @@
         display: block;
         margin: auto;
         margin-top: 60px;
-        text-transform: uppercase;
         .subscribe
     }
     
@@ -268,10 +276,28 @@
     height: 180px;
     margin-top:  @paddingTop;
     background-color: #E0E0E0;
+    padding-top: 70px;
+    text-align: center;
+    
+    input {
+        display: inline-block;
+        width: 380px;
+        height: 40px;
+        background: white;
+        border: solid #ebebeb 1px;
+        border-radius: 41px;
+        padding-left: 20px;
+    }
+    
+    .subscribe {
+        display: inline-block;
+        margin-left: @paddingLeft;
+    }
+    
+    .subscribe:hover {
+        background-color: @btnColor * 0.8;
+    }
 }
-
-
-
 
 
 
