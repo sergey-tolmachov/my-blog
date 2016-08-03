@@ -9,17 +9,37 @@
 
 //Font
 @mainFont: 'Lato', sans-serif;
-@descTextWeight: 400;
+@descTextWeight: 200;
 @titleTextWeight: 700;
 @titleTextsize: 40px;
 @sTitleTextsize: 20px;
 @descTextsize: 16px;
 
 @paddingLeft: 40px;
+@paddingTop: 120px;
+@paddingButtom: 60px;
+
+@topic-cover1: url("../img/topic-cover.png") no-repeat center center;
+@topic-cover2: url("../img/topic-cover2.png") no-repeat center center;
+@topic-cover3: url("../img/topic-cover3.png") no-repeat center center;
+@topic-cover4: url("../img/topic-cover4.png") no-repeat center center;
+@topic-cover5: url("../img/topic-cover5.png") no-repeat center center;
+@topic-cover6: url("../img/topic-cover6.png") no-repeat center center;
+@topic-cover7: url("../img/topic-cover7.png") no-repeat center center;
+@topic-cover8: url("../img/topic-cover8.png") no-repeat center center;
+@topic-cover9: url("../img/topic-cover9.png") no-repeat center center;
+@topic-cover10: url("../img/topic-cover10.png") no-repeat center center;
 
 
 .desc-text {
     color: @btnTextColor;
+    font-family: @mainFont;
+    font-size: @descTextsize;
+    font-weight: @descTextWeight;
+}
+
+.desc-text-grey {
+    color: @textColor;
     font-family: @mainFont;
     font-size: @descTextsize;
     font-weight: @descTextWeight;
@@ -33,11 +53,10 @@
 }
 
 .title-text {
-    color: @btnTextColor;
+    color: @textColor;
     font-family: @mainFont;
     font-size: @titleTextsize;
     font-weight: @titleTextWeight;
-    text-transform: uppercase;
 }
 
 
@@ -119,16 +138,137 @@
     }
     
     .cover-title {
-        display: inline-block;
-        .title-text
-        margin-top: 229px;
+        display: block;
+        color: @btnTextColor;
+        font-family: @mainFont;
+        font-size: @titleTextsize;
+        font-weight: @titleTextWeight;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        width: 100%;
+        padding-top: 229px;
+    }
+    
+    .cover-desc {
+        display: block;
+        padding-top: 15px;
+        .desc-text
+    }
+    
+    .subscribe {
+        display: block;
+        margin: auto;
+        margin-top: 60px;
+        text-transform: uppercase;
+        .subscribe
+    }
+    
+    .subscribe:hover {
+        background-color: @btnColor * 0.8;
     }
 }
 
 
+.topic-title {
+    display: block;
+    margin-top: @paddingTop;
+    padding-left: @paddingLeft;
+    padding-bottom: @paddingButtom;
+    .title-text
+}
+
+.design-content-container {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    
+    .img {
+        display: block;
+        width: 100%;
+        height: 200px;
+    }
+        
+    .img1 {
+        background: @topic-cover1;
+        .img
+    }
+    
+    .img2 {
+        background: @topic-cover2;
+        .img
+    }
+            
+    .img3 {
+        background: @topic-cover3;
+        .img
+    }
+            
+    .img4 {
+        background: @topic-cover4;
+        .img
+    }
+            
+    .img5 {
+        background: @topic-cover5;
+        .img
+    }
+            
+    .img6 {
+        background: @topic-cover6;
+        .img
+    }
+            
+    .img7 {
+        background: @topic-cover7;
+        .img
+    }
+            
+    .img8 {
+        background: @topic-cover8;
+        .img
+    }
+            
+    .img9 {
+        background: @topic-cover9;
+        .img
+    }
+    
+    .design-content {
+        padding: 0px @paddingLeft;
+    }
+    
+    .content-title {
+        display: inline-block;
+        padding-top: 30px;
+        padding-bottom: 15px;
+        .stitle-text
+    }
+    
+    .open-content {
+        display: inline-block;
+        float: right;
+        margin-top: 26px;
+    }
+    
+    .open-content:hover {
+        background-color: @btnColor;
+        color: @btnTextColor;
+    }
+        
+    .content-desc {
+        display: block;
+        .desc-text-grey
+    }
+}
 
 
-
+.subscribe-container {
+    display: block;
+    width: 100%;
+    height: 180px;
+    margin-top:  @paddingTop;
+    background-color: #E0E0E0;
+}
 
 
 
