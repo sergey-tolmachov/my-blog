@@ -1,0 +1,161 @@
+//Variables
+
+//Color
+@textColor: #424242;
+@unactiveTextColor: #9E9E9E;
+@btnTextColor: white;
+@btnColor: #EF5350;
+@lightTextColor: white;
+
+//Font
+@mainFont: 'Lato', sans-serif;
+@descTextWeight: 400;
+@titleTextWeight: 700;
+@titleTextsize: 40px;
+@sTitleTextsize: 20px;
+@descTextsize: 16px;
+
+@paddingLeft: 40px;
+
+
+.desc-text {
+    color: @btnTextColor;
+    font-family: @mainFont;
+    font-size: @descTextsize;
+    font-weight: @descTextWeight;
+}
+
+.stitle-text {
+    color: @textColor;
+    font-family: @mainFont;
+    font-size: @sTitleTextsize;
+    font-weight: @titleTextWeight;
+}
+
+.title-text {
+    color: @btnTextColor;
+    font-family: @mainFont;
+    font-size: @titleTextsize;
+    font-weight: @titleTextWeight;
+    text-transform: uppercase;
+}
+
+
+.subscribe {
+    display: block;
+    width: 160px;
+    height: 40px;
+    background-color: @btnColor;
+    border: none;
+    border-radius: 40px;
+    .desc-text
+}
+
+.open-content {
+    display: block;
+    width: 80px;
+    height: 30px;
+    background-color: transparent;
+    border: solid @btnColor 1px;
+    border-radius: 30px;
+    color: @btnColor;
+    font-family: @mainFont;
+    font-size: @descTextsize;
+    font-weight: @descTextWeight;
+}
+
+
+.cover-container {
+    display: block;
+    width: 100%;
+    height: 680px;
+    background: url(../img/cover.png) no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    
+    .logo-container {
+        display: inline-block;
+        width: auto;
+        height: 80px;
+        padding-left: @paddingLeft;
+        padding-top: 20px;
+        float: left;
+        
+        .logo {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border-radius: 41px;
+            background: white;
+        }
+        
+        .logo-title {
+            display: inline-block;
+            width: auto;
+            font-family: @mainFont;
+            font-size: @descTextsize;
+            font-weight: @descTextWeight;
+            color: @btnTextColor;
+            padding-left: 15px;
+            transform: translateY(-14px);
+        }
+    }
+    
+    nav {
+        display: inline-block;
+        top: 0;
+        float: right;
+        padding: 26px @paddingLeft;
+        
+        li {
+            display: inline-block;
+            padding-left: 29px;
+            
+            a {
+                text-decoration: none;
+                .desc-text
+            }
+        }
+    }
+    
+    .cover-title {
+        display: inline-block;
+        .title-text
+        margin-top: 229px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
