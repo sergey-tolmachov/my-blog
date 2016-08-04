@@ -66,9 +66,21 @@
             padding-top: 8px;
         }
         
+        .next {
+            display: none;
+        }
+        
         .icon-like-pressed {
+            display: inline-block;
             font-size: 40px;
-            color: #E64A19;
+            color: @btnTextColor;
+            padding-left: 5px;
+        }
+        
+        .icon-like-pressed2 {
+            display: inline-block;
+            font-size: 40px;
+            color: @red;
             padding-left: 5px;
         }
     }
@@ -115,7 +127,13 @@
     display: block;
     background-color: transparent;
     width: 100%;
-    height: 180px;
+    height: 240px;
+    text-align: center;
+    padding-top: 100px;
+    
+    .i-like-it {
+        margin: auto;        
+    }
 }
 
 

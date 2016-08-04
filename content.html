@@ -7,6 +7,8 @@
 	<link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
 	
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900italic,900,700italic,400italic,300italic,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="http://s.mlcdn.co/animate.css">
 	<link rel="stylesheet" href="icomoon/style.css">
 	<link rel="stylesheet" href="css/content.css">
 
@@ -29,7 +31,8 @@
         </div>
         <div class="likes-container">
             <span class="likes-numbers desc-text">125</span>
-            <span class="icon-like-pressed"></span>
+            <span class="next desc-text">126</span>
+            <span id="icon-like" class="icon-like-pressed animated"></span>
         </div>
 	</div>
 	
@@ -57,7 +60,9 @@
         <div class="col-md-6 topic-img-container"><div class="img2"></div></div>
     </div>
 
-    <div class="footer"></div>
+    <div class="footer">
+        <button id="like" class="like-line-btn i-like-it animated">I like it</button>
+    </div>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     
