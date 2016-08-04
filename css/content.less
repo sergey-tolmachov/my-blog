@@ -1,0 +1,126 @@
+@import "style";
+
+
+.header-container {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background-color: fade(@textColor, 50%);
+    -webkit-box-shadow: 0px 4px 8px 0px rgba(66,66,66,0.5);
+    -moz-box-shadow: 0px 4px 8px 0px rgba(66,66,66,0.5);
+    box-shadow: 0px 4px 8px 0px rgba(66,66,66,0.5);
+    z-index: 1;
+    top: 0;
+    
+    .back-container {
+        display: inline-block;
+        width: auto;
+        height: 80px;
+        padding-left: @paddingLeft;
+        padding-top: 20px;
+        float: left;
+        
+        .back-btn {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border-radius: 41px;
+            background: @btnColor;
+            text-decoration: none;
+            
+            .icon-back-arrow {
+                display: block;
+                font-size: 24px;
+                color: @btnTextColor;
+                margin: 8px 8px;
+                text-decoration: none;
+            }
+        }
+        
+        .back-btn:hover {
+            background-color: @btnColor * 0.8;
+        }
+        
+        .back-title {
+            display: inline-block;
+            width: auto;
+            font-family: @mainFont;
+            font-size: @descTextsize;
+            font-weight: @descTextWeight;
+            color: @btnTextColor;
+            padding-left: 15px;
+            float: right;
+            padding-top: 8px;
+        }
+    }
+    
+    .likes-container {
+        padding-right: @paddingLeft;
+        padding-top: 20px;
+        float: right;
+        
+        .likes-numbers {
+            display: inline-block;
+            float: left;
+            padding-top: 8px;
+        }
+        
+        .icon-like-pressed {
+            font-size: 40px;
+            color: #E64A19;
+            padding-left: 5px;
+        }
+    }
+    
+}
+
+.content-cover-container {
+    display: block;
+    width: 100%;
+    height: 600px;
+    background: url(../img/main-topic-cover.png) no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    z-index: 0;
+    margin-top: 80px;
+}
+
+.topic-container {
+    display: inline-block;
+    padding-left: @paddingLeft - 20;
+    padding-right: @paddingLeft - 20;
+
+    .topic-img-container {    
+    
+        .img {
+            display: block;
+            width: 100%;
+            height: 400px;
+        }
+
+        .img1 {
+            background: @topic-cover1;
+            .img
+        }
+        
+        .img2 {
+            background: @topic-cover2;
+            .img
+        }
+    }
+}
+
+.footer {
+    display: block;
+    background-color: transparent;
+    width: 100%;
+    height: 180px;
+}
+
+
+
+
+
+
+
